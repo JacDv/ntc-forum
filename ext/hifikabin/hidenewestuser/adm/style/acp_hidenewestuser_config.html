@@ -1,0 +1,45 @@
+{% INCLUDE 'overall_header.html' %}
+<h1>{{ lang('ACP_HIDENEWESTUSER_CONFIG') }}</h1>
+<p>{{ lang('ACP_HIDENEWESTUSER_CONFIG_EXPLAIN') }}</p>
+<form id="acp_hidenewestuser_config" method="post" action="{{ U_ACTION }}">
+	<fieldset>
+		<legend>{{ lang('ACP_HIDENEWESTUSER_CONFIG_SET') }}</legend>
+		<dl>
+			<dt>
+				<label for="hidenewestuser_stats">{{ lang('HIDENEWESTUSER_STATS') ~ lang('COLON') }}</label><br><span>{{ lang('HIDENEWESTUSER_STATS_SW_EXPLAIN') }}</span>
+			</dt>
+			<dd>
+				<br style="margin-bottom:4px;">
+				<select name="hidenewestuser_stats_sw" id="hidenewestuser_stats_sw">
+				<option value="1"{% if HIDENEWESTUSER_STATS_SW eq '1' %} selected="selected"{% endif %}>{{ lang('HIDENEWESTUSER_ADMIN') }}</option>
+				<option value="2"{% if HIDENEWESTUSER_STATS_SW eq '2' %} selected="selected"{% endif %}>{{ lang('HIDENEWESTUSER_MODS') }}</option>
+				<option value="3"{% if HIDENEWESTUSER_STATS_SW eq '3' %} selected="selected"{% endif %}>{{ lang('HIDENEWESTUSER_MEMBERS') }}</option>
+				<option value="4"{% if HIDENEWESTUSER_STATS_SW eq '4' %} selected="selected"{% endif %}>{{ lang('HIDENEWESTUSER_ALL') }}</option>
+				<option value="5"{% if HIDENEWESTUSER_STATS_SW eq '5' %} selected="selected"{% endif %}>{{ lang('HIDENEWESTUSER_NONE') }}</option>
+				</select>
+			</dd>
+		</dl>
+		<dl>
+			<dt>
+				<label for="hidenewestuser_online">{{ lang('HIDENEWESTUSER_ONLINE') ~ lang('COLON') }}</label><br><span>{{ lang('HIDENEWESTUSER_ONLINE_SW_EXPLAIN') }}</span>
+			</dt>
+			<dd>
+				<br style="margin-bottom:4px;">
+				<select name="hidenewestuser_online_sw" id="hidenewestuser_online_sw">
+				<option value="1"{% if HIDENEWESTUSER_ONLINE_SW eq '1' %} selected="selected"{% endif %}>{{ lang('HIDENEWESTUSER_ADMIN') }}</option>
+				<option value="2"{% if HIDENEWESTUSER_ONLINE_SW eq '2' %} selected="selected"{% endif %}>{{ lang('HIDENEWESTUSER_MODS') }}</option>
+				<option value="3"{% if HIDENEWESTUSER_ONLINE_SW eq '3' %} selected="selected"{% endif %}>{{ lang('HIDENEWESTUSER_MEMBERS') }}</option>
+				<option value="5"{% if HIDENEWESTUSER_ONLINE_SW eq '5' %} selected="selected"{% endif %}>{{ lang('HIDENEWESTUSER_ALL') }}</option>
+				<option value="4"{% if HIDENEWESTUSER_ONLINE_SW eq '4' %} selected="selected"{% endif %}>{{ lang('HIDENEWESTUSER_NONE') }}</option>
+				</select>
+			</dd>
+		</dl>
+		<p class="submit-buttons">
+			<input type="hidden" name="action" value="save" >
+			<input class="button1" type="submit" id="submit" name="submit" value="{{ lang('SUBMIT') }}" >&nbsp;
+			<input class="button2" type="reset" id="reset" name="reset" value="{{ lang('RESET') }}" >
+			{{ S_FORM_TOKEN }}
+		</p>
+	</fieldset>
+</form>
+{% INCLUDE 'overall_footer.html' %}

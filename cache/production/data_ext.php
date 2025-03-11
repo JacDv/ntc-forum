@@ -1,0 +1,4 @@
+<?php exit; ?>
+1773255347
+842
+a:5:{s:20:"gfksx/thanksforposts";a:4:{s:8:"ext_name";s:20:"gfksx/thanksforposts";s:10:"ext_active";s:1:"1";s:9:"ext_state";s:4:"b:0;";s:8:"ext_path";s:25:"ext/gfksx/thanksforposts/";}s:24:"hifikabin/hidenewestuser";a:4:{s:8:"ext_name";s:24:"hifikabin/hidenewestuser";s:10:"ext_active";s:1:"1";s:9:"ext_state";s:4:"b:0;";s:8:"ext_path";s:29:"ext/hifikabin/hidenewestuser/";}s:13:"phpbb/viglink";a:4:{s:8:"ext_name";s:13:"phpbb/viglink";s:10:"ext_active";s:1:"1";s:9:"ext_state";s:4:"b:0;";s:8:"ext_path";s:18:"ext/phpbb/viglink/";}s:11:"phpbbde/tou";a:4:{s:8:"ext_name";s:11:"phpbbde/tou";s:10:"ext_active";s:1:"0";s:9:"ext_state";s:4:"b:0;";s:8:"ext_path";s:16:"ext/phpbbde/tou/";}s:14:"stevotvr/flair";a:4:{s:8:"ext_name";s:14:"stevotvr/flair";s:10:"ext_active";s:1:"1";s:9:"ext_state";s:4:"b:0;";s:8:"ext_path";s:19:"ext/stevotvr/flair/";}}

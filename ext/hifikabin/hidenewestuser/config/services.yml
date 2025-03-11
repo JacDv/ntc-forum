@@ -1,0 +1,8 @@
+services:
+    hifikabin.hidenewestuser.listener:
+        class: hifikabin\hidenewestuser\event\listener
+        arguments:
+            - '@template'
+            - '@config'
+        tags:
+            - { name: event.listener }

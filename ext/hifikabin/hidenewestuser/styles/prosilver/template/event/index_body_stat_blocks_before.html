@@ -1,0 +1,15 @@
+{% if (HIDENEWESTUSER_ONLINE_SW eq '1' and U_ACP) or (HIDENEWESTUSER_ONLINE_SW eq '2' and (U_ACP or U_MCP)) or (HIDENEWESTUSER_ONLINE_SW eq '3' and S_USER_LOGGED_IN) or (HIDENEWESTUSER_ONLINE_SW eq '5') %}
+<div class="stat-block">
+	{% if U_VIEWONLINE %}
+	<h3><a href="{{ U_VIEWONLINE }}">{{ lang('WHO_IS_ONLINE') }}</a></h3>
+	{% else %}
+	<h3>{{ lang('WHO_IS_ONLINE') }}</h3>
+	{% endif %}
+	<p>
+		{% EVENT index_body_block_online_prepend %}
+		{{ TOTAL_USERS_ONLINE }} ({{ lang('ONLINE_EXPLAIN') }})<br>{{ RECORD_USERS }}<br> <br>{{ LOGGED_IN_USER_LIST }}
+		{% if LEGEND %}<br><em>{{ lang('LEGEND') }}{{ lang('COLON') }} {{ LEGEND }}</em>{% endif %}
+		{% EVENT index_body_block_online_append %}
+	</p>
+</div>
+{% endif %}

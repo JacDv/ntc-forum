@@ -1,0 +1,6 @@
+{% if (HIDENEWESTUSER_ONLINE_SW eq '1' and U_ACP) or (HIDENEWESTUSER_ONLINE_SW eq '2' and (U_ACP or U_MCP)) or (HIDENEWESTUSER_ONLINE_SW eq '3' and S_USER_LOGGED_IN) or (HIDENEWESTUSER_ONLINE_SW eq '5') %}
+	<div class="stat-block online-list">
+		<h3><a href="{{ U_VIEWONLINE }}">{{ lang('WHO_IS_ONLINE') }}</a></h3>
+		<p>{{ LOGGED_IN_USER_LIST }}</p>
+	</div>
+{% endif %}

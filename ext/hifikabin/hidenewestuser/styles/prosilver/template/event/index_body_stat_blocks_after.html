@@ -1,0 +1,10 @@
+{% if (HIDENEWESTUSER_STATS_SW eq '1' and U_ACP) or (HIDENEWESTUSER_STATS_SW eq '2' and (U_ACP or U_MCP)) or (HIDENEWESTUSER_STATS_SW eq '3' and S_USER_LOGGED_IN ) or (HIDENEWESTUSER_STATS_SW eq '4') %}
+<div id="stat-block">
+	<h3>{{ lang('STATISTICS') }}</h3>
+	<p>
+		{% EVENT index_body_block_stats_prepend %}
+		{{ TOTAL_POSTS }} &bull; {{ TOTAL_TOPICS }} &bull; {{ TOTAL_USERS }}
+		{% EVENT index_body_block_stats_append %}
+	</p>
+</div>
+{% endif %}
