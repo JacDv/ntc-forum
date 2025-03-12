@@ -1,5 +1,5 @@
-SheFarer Forum
+# SheFarer Forum
 
-Upload files
-Update config.php with the information for the database on your server
+Upload files<br>
+Update config.php with the information for the database on your server<br>
 Import forum_db.sql
