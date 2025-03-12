@@ -53,10 +53,10 @@ $lang = array_merge($lang, array(
 	'ACP_BAN_IPS'				=> 'Ban IPs',
 	'ACP_BAN_USERNAMES'			=> 'Ban users',
 	'ACP_BBCODES'				=> 'BBCodes',
-	'ACP_BOARD_CONFIGURATION'	=> 'Board configuration',
-	'ACP_BOARD_FEATURES'		=> 'Board features',
-	'ACP_BOARD_MANAGEMENT'		=> 'Board management',
-	'ACP_BOARD_SETTINGS'		=> 'Board settings',
+	'ACP_BOARD_CONFIGURATION'	=> 'Forum configuration',
+	'ACP_BOARD_FEATURES'		=> 'Forum features',
+	'ACP_BOARD_MANAGEMENT'		=> 'Forum management',
+	'ACP_BOARD_SETTINGS'		=> 'Forum settings',
 	'ACP_BOTS'					=> 'Spiders/Robots',
 
 	'ACP_CAPTCHA'				=> 'CAPTCHA',
@@ -266,8 +266,8 @@ $lang = array_merge($lang, array(
 	'LOAD_NOTIFICATIONS'			=> 'Display Notifications',
 	'LOAD_NOTIFICATIONS_EXPLAIN'	=> 'Display the notifications list on every page (typically in the header).',
 	'LOGGED_IN_AS'			=> 'You are logged in as:',
-	'LOGIN_ADMIN'			=> 'To administer the board you must be an authenticated user.',
-	'LOGIN_ADMIN_CONFIRM'	=> 'To administer the board you must re-authenticate yourself.',
+	'LOGIN_ADMIN'			=> 'To administer the forum you must be an authenticated user.',
+	'LOGIN_ADMIN_CONFIRM'	=> 'To administer the forum you must re-authenticate yourself.',
 	'LOGIN_ADMIN_SUCCESS'	=> 'You have successfully authenticated and will now be redirected to the Administration Control Panel.',
 	'LOOK_UP_FORUM'			=> 'Select a forum',
 	'LOOK_UP_FORUMS_EXPLAIN'=> 'You are able to select more than one forum.',
@@ -280,7 +280,7 @@ $lang = array_merge($lang, array(
 	'MOVE_UP'				=> 'Move up',
 
 	'NOTIFY'				=> 'Notification',
-	'NO_ADMIN'				=> 'You are not authorised to administer this board.',
+	'NO_ADMIN'				=> 'You are not authorised to administer this forum.',
 	'NO_EMAILS_DEFINED'		=> 'No valid email addresses found.',
 	'NO_FILES_TO_DELETE'	=> 'Attachments you selected for deletion do not exist.',
 	'NO_PASSWORD_SUPPLIED'	=> 'You need to enter your password to access the Administration Control Panel.',
@@ -292,7 +292,7 @@ $lang = array_merge($lang, array(
 	'PARSE_SMILIES'						=> 'Parse smilies',
 	'PARSE_URLS'						=> 'Parse links',
 	'PERMISSIONS_TRANSFERRED'			=> 'Permissions transferred',
-	'PERMISSIONS_TRANSFERRED_EXPLAIN'	=> 'You currently have the permissions from %1$s. You are able to browse the board with this user’s permissions, but not access the administration control panel since admin permissions were not transferred. You can <a href="%2$s"><strong>revert to your permission set</strong></a> at any time.',
+	'PERMISSIONS_TRANSFERRED_EXPLAIN'	=> 'You currently have the permissions from %1$s. You are able to browse the forum with this user’s permissions, but not access the administration control panel since admin permissions were not transferred. You can <a href="%2$s"><strong>revert to your permission set</strong></a> at any time.',
 	'PROCEED_TO_ACP'					=> '%sProceed to the ACP%s',
 
 	'RELEASE_ANNOUNCEMENT'		=> 'Announcement',
@@ -321,8 +321,8 @@ $lang = array_merge($lang, array(
 	'USERNAMES_EXPLAIN'		=> 'Place each username on a separate line.',
 	'USER_CONTROL_PANEL'	=> 'User Control Panel',
 
-	'UPDATE_NEEDED'			=> 'The board is not up to date.',
-	'UPDATE_NOT_NEEDED'		=> 'The board is up to date.',
+	'UPDATE_NEEDED'			=> 'The forum is not up to date.',
+	'UPDATE_NOT_NEEDED'		=> 'The forum is up to date.',
 	'UPDATES_AVAILABLE'		=> 'Updates available:',
 
 	'WARNING'				=> 'Warning',
@@ -337,8 +337,8 @@ $lang = array_merge($lang, array(
 
 // Logs
 $lang = array_merge($lang, array(
-	'ACP_ADMIN_LOGS_EXPLAIN'	=> 'This lists all the actions carried out by board administrators. You can sort by username, date, IP or action. If you have appropriate permissions you can also clear individual operations or the log as a whole.',
-	'ACP_CRITICAL_LOGS_EXPLAIN'	=> 'This lists the actions carried out by the board itself. This log provides you with information you are able to use for solving specific problems, for example non-delivery of emails. You can sort by username, date, IP or action. If you have appropriate permissions you can also clear individual operations or the log as a whole.',
+	'ACP_ADMIN_LOGS_EXPLAIN'	=> 'This lists all the actions carried out by forum administrators. You can sort by username, date, IP or action. If you have appropriate permissions you can also clear individual operations or the log as a whole.',
+	'ACP_CRITICAL_LOGS_EXPLAIN'	=> 'This lists the actions carried out by the forum itself. This log provides you with information you are able to use for solving specific problems, for example non-delivery of emails. You can sort by username, date, IP or action. If you have appropriate permissions you can also clear individual operations or the log as a whole.',
 	'ACP_MOD_LOGS_EXPLAIN'		=> 'This lists all actions done on forums, topics and posts as well as actions carried out on users by moderators, including banning. You can sort by username, date, IP or action. If you have appropriate permissions you can also clear individual operations or the log as a whole.',
 	'ACP_USERS_LOGS_EXPLAIN'	=> 'This lists all actions carried out by users or on users (reports, warnings and user notes).',
 	'ALL_ENTRIES'				=> 'All entries',
@@ -354,13 +354,13 @@ $lang = array_merge($lang, array(
 
 // Index page
 $lang = array_merge($lang, array(
-	'ADMIN_INTRO'				=> 'This screen will give you a quick overview of all the various statistics of your board. The links on the left hand side of this screen allow you to control every aspect of your board experience. Each page will have instructions on how to use the tools.',
+	'ADMIN_INTRO'				=> 'This screen will give you a quick overview of all the various statistics of your forum. The links on the left hand side of this screen allow you to control every aspect of your forum experience. Each page will have instructions on how to use the tools.',
 	'ADMIN_LOG'					=> 'Logged administrator actions',
-	'ADMIN_LOG_INDEX_EXPLAIN'	=> 'This gives an overview of the last five actions carried out by board administrators. A full copy of the log can be viewed from the appropriate menu item or following the link below.',
+	'ADMIN_LOG_INDEX_EXPLAIN'	=> 'This gives an overview of the last five actions carried out by forum administrators. A full copy of the log can be viewed from the appropriate menu item or following the link below.',
 	'AVATAR_DIR_SIZE'			=> 'Avatar directory size',
 
-	'BOARD_STARTED'		=> 'Board started',
-	'BOARD_VERSION'		=> 'Board version',
+	'BOARD_STARTED'		=> 'Forum started',
+	'BOARD_VERSION'		=> 'Forum version',
 
 	'DATABASE_SERVER_INFO'	=> 'Database server',
 	'DATABASE_SIZE'			=> 'Database size',
@@ -378,7 +378,7 @@ $lang = array_merge($lang, array(
 	'ERROR_DEFAULT_CHARSET_EXPLAIN'					=> '<var>default_charset</var> must be set to <samp>UTF-8</samp>. You can check the current value on the <samp>PHP information</samp> page.',
 
 	'FILES_PER_DAY'		=> 'Attachments per day',
-	'FORUM_STATS'		=> 'Board statistics',
+	'FORUM_STATS'		=> 'Forum statistics',
 
 	'GZIP_COMPRESSION'	=> 'GZip compression',
 
@@ -405,9 +405,9 @@ $lang = array_merge($lang, array(
 	'PURGE_SESSIONS_EXPLAIN'	=> 'Purge all sessions. This will log out all users by truncating the session table.',
 	'PURGE_SESSIONS_SUCCESS'	=> 'Sessions successfully purged.',
 
-	'RESET_DATE'					=> 'Reset board’s start date',
-	'RESET_DATE_CONFIRM'			=> 'Are you sure you wish to reset the board’s start date?',
-	'RESET_DATE_SUCCESS'				=> 'Board’s start date reset',
+	'RESET_DATE'					=> 'Reset forum’s start date',
+	'RESET_DATE_CONFIRM'			=> 'Are you sure you wish to reset the forum’s start date?',
+	'RESET_DATE_SUCCESS'				=> 'Forum’s start date reset',
 	'RESET_ONLINE'					=> 'Reset most users ever online',
 	'RESET_ONLINE_CONFIRM'			=> 'Are you sure you wish to reset the most users ever online counter?',
 	'RESET_ONLINE_SUCCESS'				=> 'Most users ever online reset',
@@ -480,7 +480,7 @@ $lang = array_merge($lang, array(
 
 // Help support phpBB page
 $lang = array_merge($lang, array(
-	'EXPLAIN_SEND_STATISTICS'	=> 'Please send information about your server and board configurations to phpBB for statistical analysis. All information that could identify you or your website has been removed - the data is entirely <strong>anonymous</strong>. We base decisions about future phpBB versions on this information. The statistics are made available publically. We also share this data with the PHP project, the programming language phpBB is made with.',
+	'EXPLAIN_SEND_STATISTICS'	=> 'Please send information about your server and forum configurations to phpBB for statistical analysis. All information that could identify you or your website has been removed - the data is entirely <strong>anonymous</strong>. We base decisions about future phpBB versions on this information. The statistics are made available publically. We also share this data with the PHP project, the programming language phpBB is made with.',
 	'EXPLAIN_SHOW_STATISTICS'	=> 'Using the button below you can preview all variables that will be transmitted.',
 	'DONT_SEND_STATISTICS'		=> 'Return to the ACP if you do not wish to send statistical information to phpBB.',
 	'GO_ACP_MAIN'				=> 'Go to the ACP start page',
@@ -564,7 +564,7 @@ $lang = array_merge($lang, array(
 	'LOG_CONFIG_AVATAR'			=> '<strong>Altered avatar settings</strong>',
 	'LOG_CONFIG_COOKIE'			=> '<strong>Altered cookie settings</strong>',
 	'LOG_CONFIG_EMAIL'			=> '<strong>Altered email settings</strong>',
-	'LOG_CONFIG_FEATURES'		=> '<strong>Altered board features</strong>',
+	'LOG_CONFIG_FEATURES'		=> '<strong>Altered forum features</strong>',
 	'LOG_CONFIG_LOAD'			=> '<strong>Altered load settings</strong>',
 	'LOG_CONFIG_MESSAGE'		=> '<strong>Altered private message settings</strong>',
 	'LOG_CONFIG_POST'			=> '<strong>Altered post settings</strong>',
@@ -573,7 +573,7 @@ $lang = array_merge($lang, array(
 	'LOG_CONFIG_SEARCH'			=> '<strong>Altered search settings</strong>',
 	'LOG_CONFIG_SECURITY'		=> '<strong>Altered security settings</strong>',
 	'LOG_CONFIG_SERVER'			=> '<strong>Altered server settings</strong>',
-	'LOG_CONFIG_SETTINGS'		=> '<strong>Altered board settings</strong>',
+	'LOG_CONFIG_SETTINGS'		=> '<strong>Altered forum settings</strong>',
 	'LOG_CONFIG_SIGNATURE'		=> '<strong>Altered signature settings</strong>',
 	'LOG_CONFIG_VISUAL'			=> '<strong>Altered anti-spambot settings</strong>',
 
@@ -728,7 +728,7 @@ $lang = array_merge($lang, array(
 	'LOG_REASON_UPDATED'	=> '<strong>Updated report/denial reason</strong><br />» %s',
 
 	'LOG_REFERER_INVALID'		=> '<strong>Referrer validation failed</strong><br />»Referrer was “<em>%1$s</em>”. The request was rejected and the session killed.',
-	'LOG_RESET_DATE'			=> '<strong>Board start date reset</strong>',
+	'LOG_RESET_DATE'			=> '<strong>Forum start date reset</strong>',
 	'LOG_RESET_ONLINE'			=> '<strong>Most users online reset</strong>',
 	'LOG_RESYNC_FILES_STATS'	=> '<strong>File statistics resynchronised</strong>',
 	'LOG_RESYNC_POSTCOUNTS'		=> '<strong>User post counts resynchronised</strong>',
