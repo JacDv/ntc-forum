@@ -217,7 +217,7 @@ Header
 }
 
 .page-header .nav-link {
-    color: var(--bs-white);
+    color: var(--bs-gray);
 }
 
 .page-header .nav-link:hover, .page-header .nav-link:active, .page-header .nav-link:focus {
