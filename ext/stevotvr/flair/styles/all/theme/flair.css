@@ -13,6 +13,8 @@
 	margin: 0;
 	padding: 0;
 	vertical-align: top;
+	width: 25%;
+	aspect-ratio: 1/1;
 }
 
 .flair-count {
@@ -35,6 +37,7 @@
 	display: inline-block;
 	position: relative;
 	text-align: center;
+	font-size: 1.25em;
 }
 
 .flair-icon img {
