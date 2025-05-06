@@ -1,0 +1,43 @@
+services:
+    toxyy.anonymousposts.acp_functions:
+        class: toxyy\anonymousposts\event\acp_functions
+        arguments:
+            - '@language'
+            - '@request'
+        tags:
+            - { name: event.listener }
+    toxyy.anonymousposts.main:
+        class: toxyy\anonymousposts\event\main
+        arguments:
+            - '@language'
+            - '@template'
+            - '@user'
+            - '@auth'
+            - '@content.visibility'
+            - '@toxyy.anonymousposts.driver'
+        tags:
+            - { name: event.listener }
+    toxyy.anonymousposts.mcp_functions:
+        class: toxyy\anonymousposts\event\mcp_functions
+        arguments:
+            - '@toxyy.anonymousposts.driver'
+        tags:
+            - { name: event.listener }
+    toxyy.anonymousposts.posting:
+        class: toxyy\anonymousposts\event\posting
+        arguments:
+            - '@language'
+            - '@template'
+            - '@user'
+            - '@auth'
+            - '@request'
+            - '@notification_manager'
+            - '@toxyy.anonymousposts.driver'
+        tags:
+            - { name: event.listener }
+    toxyy.anonymousposts.driver:
+        class: toxyy\anonymousposts\driver\driver
+        arguments:
+            - '@dbal.conn'
+            - '@cache.driver'
+            - '@config'
